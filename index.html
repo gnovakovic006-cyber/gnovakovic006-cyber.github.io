@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ivan Byekwaso</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0d0d0d;
+  color: white;
+}
+
+/* NAV */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 50px;
+}
+
+nav a {
+  margin-left: 25px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+/* HERO SPLIT */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 90vh;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.hero-left h1 {
+  font-size: 48px;
+}
+
+.hero-left p {
+  margin-top: 15px;
+  color: #bbb;
+}
+
+.btn {
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: white;
+  color: black;
+  border-radius: 25px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.hero-right {
+  background: url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&w=900&q=80') center/cover;
+}
+
+/* SECTION */
+.section {
+  padding: 100px 50px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+/* QUOTE SECTION */
+.quote {
+  text-align: center;
+  font-size: 24px;
+  padding: 80px 20px;
+  background: #111;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+}
+
+/* MOBILE */
+@media(max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-right {
+    height: 300px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>Ivan</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Training</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-left">
+    <h1>Train With a 5x Mr Uganda Champion</h1>
+    <p>Real results. Real experience. No shortcuts.</p>
+
+    <a href="https://wa.me/491234567890" class="btn">
+      Book Training
+    </a>
+  </div>
+
+  <div class="hero-right"></div>
+</section>
+
+<section id="about" class="section">
+  <h2>About Ivan</h2>
+  <p>
+    Ivan Byekwaso is an international bodybuilding champion and former professional athlete.
+    With years of experience in training and competition, he now helps clients achieve real
+    results through simple and effective coaching.
+  </p>
+</section>
+
+<section class="quote">
+  “Discipline creates results.”
+</section>
+
+<section id="services" class="section">
+  <h2>Training Services</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Personal Training</h3>
+      <p>1-on-1 or group sessions tailored to you.</p>
+    </div>
+
+    <div class="card">
+      <h3>Fat Loss & Muscle Gain</h3>
+      <p>Transform your body with proven methods.</p>
+    </div>
+
+    <div class="card">
+      <h3>Nutrition Plans</h3>
+      <p>Simple, effective, sustainable nutrition.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact">
+  <h2>Start Your Transformation</h2>
+  <p>Message directly on WhatsApp to begin.</p>
+
+  <a href="https://wa.me/491234567890" class="btn">
+    Contact on WhatsApp
+  </a>
+</section>
+
+</body>
+</html>
